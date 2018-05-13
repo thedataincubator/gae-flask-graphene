@@ -5,6 +5,10 @@ __author__ = 'ekampf'
 
 
 def initialize():
+    count = Character.query().count()
+    if count > 0:
+        return
+
     human = Character(name='Human')
     human.put()
 

@@ -4,5 +4,4 @@ SHELL=bash
 	pip install -r requirements.txt -t vendor && touch .conda
 
 server: .conda
-	dev_appserver.py . --port=6100 --admin_port=6101 --api_port=6102 \
-		--python_startup_script startup.py
+	dev_appserver.py . --port=6100 --admin_port=6101 --api_port=6102
